@@ -1,0 +1,33 @@
+========== Parsing input1.txt ==========
+STACK                          INPUT                          ACTION    
+
+0                              id + id * id $                 s5        
+0 id 5                         + id * id $                    r6        
+0 F 3                          + id * id $                    r4        
+0 T 2                          + id * id $                    r2        
+0 E 1                          + id * id $                    s6        
+0 E 1 + 6                      id * id $                      s5        
+0 E 1 + 6 id 5                 * id $                         r6        
+0 E 1 + 6 F 3                  * id $                         r4        
+0 E 1 + 6 T 9                  * id $                         s7        
+0 E 1 + 6 T 9 * 7              id $                           s5        
+0 E 1 + 6 T 9 * 7 id 5         $                              r6        
+0 E 1 + 6 T 9 * 7 F 10         $                              r3        
+0 E 1 + 6 T 9                  $                              r1        
+0 E 1                          $                              acc       
+Input accepted.
+
+Parse tree:
+/E
+/E/E
+/E/E/T
+/E/E/T/F
+/E/E/T/F/id
+/E/+
+/E/T
+/E/T/T
+/E/T/T/F
+/E/T/T/F/id
+/E/T/*
+/E/T/F
+/E/T/F/id

@@ -1,0 +1,13 @@
+========== Parsing input7.txt ==========
+STACK                          INPUT                          ACTION    
+
+0                              id + * id $                    s5        
+0 id 5                         + * id $                       r6        
+0 F 3                          + * id $                       r4        
+0 T 2                          + * id $                       r2        
+0 E 1                          + * id $                       s6        
+0 E 1 + 6                      * id $                         error     
+Syntax error at token: *
+
+Parse tree:
+/+

@@ -1,0 +1,3 @@
+========== Parsing input8.txt ==========
+STACK                          INPUT                          ACTION    
+
